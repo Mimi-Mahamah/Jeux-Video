@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {}
+
+
+/* Header */
+
+#header {
+    font-size: 3.1em;
+    margin: 0;
+    padding: 0;
+    color: rgb(94, 46, 41);
+    position: relative;
+    left: 0.6em;
+    /* using position relative so the writing appears on top of the backgroud opacity */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid #81423b 2px;
+    height: 3.5em;
+    background-color: salmon;
+    font-family: 'Electrolize', sans-serif;
+}
+
+.header::before {
+    background: url(./background.png) no-repeat;
+    background-size: 100vw;
+    content: "";
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(252, 172, 164);
+    opacity: 0.7;
+}
+
+h3 {
+    position: relative;
+    right: 35em;
+    color: #56231e;
+    font-family: 'Electrolize', sans-serif;
+}
+
+
+/* Search Bar */
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    margin: 12em;
+}
+
+.search {
+    width: 30em;
+    height: 4em;
+    border-radius: 2em;
+    border: 2px solid #81423b;
+}
+
+.search-button {
+    position: relative;
+    height: 2em;
+    top: 1em;
+    right: 3em;
+    border: none;
+    background-color: transparent;
+}
+
+.search-icon {
+    color: salmon;
+    font-size: 1.5em;
+}
